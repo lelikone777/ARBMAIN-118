@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Games Universe</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+    <style>
+        .price-area {
+            margin-top: 10px;
+            font-weight: normal;
+            font-size: 11px;
+            color: #8a9499;
+        }
+
+    </style>
+</head>
+
+<body>
+    <input type="text" class="hiddenInput" inputmode="numeric" maxlength="4">
+    <div class="wrapper">
+    <div class="languages">
+        <div class="container">
+            <div class="multi-language">
+                <ul class="list">
+                    <div class="only-ar">
+                        <li class="language-option optionEn"><img src="images/triangle1.png">English</li>
+                    </div>
+                    <div class="only-en">
+                        <li class="language-option optionAr">العربية <img src="images/triangle1.png"></li>
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="top">
+        <div class="container">
+            <img class="main-img" src="images/main-image.png">
+        </div>
+    </div>
+    <div class="phone-form">
+        <div class="container">
+            <form method="POST">
+
+                   <div class="text-box">
+                       <p  class="only-ar actionText">فعل حسابك</p>
+                       <p  class="only-en actionText">Activate your account</p>
+
+
+                       <p class="only-ar infoText">
+                           يجب أن يصل الرمز خلال الثلاثين ثانية القادمة.
+                       </p>
+                       <p class="only-en infoText">
+                           The code should arrive within the next 30 second.
+                       </p>
+                   </div>
+
+
+                <div class="inputWrapper" >
+                    <div class="inputBlock inputPinBlock">
+                        <input type="text" class="mainInput pin-mainInput" name="pin" placeholder="_ _ _ _" maxlength="4" inputmode="numeric" required>
+                        <div class="cursor pin-cursor"></div>
+                    </div>
+                </div>
+
+                <button class="buttons pin-button">
+                    <span class="only-en">SUBSCRIBE</span>
+                    <span class="only-ar">الإشتراك</span>
+                </button>
+
+            </form>
+            <p class="error"></p>
+            <div class="price-area only-en" >
+                <span>Subscription 12 AED/week</span>
+            </div>
+            <div class="price-area only-ar">
+                <span>اشتراك 12 درهم / أسبوع</span>
+            </div>
+
+        </div>
+    </div>
+    <div class="footer pin-footer">
+        <button class="cancel pin-cancel" name="cancel" id="exitButton" onclick="window.open('https://games-universe.online/','_self')">
+            <span class="only-en">EXIT</span>
+            <span class="only-ar">خروج</span>
+        </button>
+        <div class="footer-box">
+            <div id="disclaimer" class="only-en">
+                <p>
+                  Terms & Conditions: Welcome to Games Universe in UAE.
+Please be aware that some contents, like Games and Ringtones available for download are not compatible with iPhones.
+For Etisalat users: You will subscribe to Games Universe service. As a mobile subscriber, you will be deducted for 12 AED/week (VAT included), after the 24 hours free period automatically and will be granted access to the games. No commitment, you can cancel your subscription at any time by sending C GSU to 1111.
+The free trial is valid only for new subscribers. Enjoy your Free trial for 24 hours.
+For du users: You will subscribe to Games Universe service. As a mobile subscriber,you will be deducted for 12.6 AED/week (VAT inclusive),and will be granted access to the games. This is a subscription service active until you send Unsub GU to 2839.
+To make use of this service you must be more than 18 years old or have received permission from your parents or person who is authorized to pay your bill.
+We work in accordance with the international code of conduct for SMS service.
+To get support, please contact support@customer-help.center
+                    For complete T&amp;C click&nbsp;<a href="https://aeg.games-universe.online/terms">here</a>
+                </p>
+            </div>
+            <div id="disclaimer" class="only-ar">
+                <p>
+                  <ul>
+					<li>الشروط والأحكام: أهلاً بك في Games Universe في الإمارات العربية المتحدة.</li>
+					<li>يرجى العلم بأن بعض المحتويات ، مثل الألعاب المتاحة للتنزيل غير متوافقة مع أجهزة iPhone.</li>
+					<li>لمستخدمي اتصالات: سوف تشترك في خدمة Games Universe. بعد 24 ساعة من الإصدار التجريبي المجاني ، سيتم خصم 12 درهمًا إماراتيًا / أسبوعيًا تلقائيًا. لا يوجد التزام ، يمكنك الإلغاء في أي وقت عن طريق إرسال C GSU إلى 1111.</li>
+					<li>التجربة المجانية صالحة فقط للمشتركين الجدد</li>
+					<li>استمتع بالإصدار التجريبي المجاني لمدة 24 ساعة.</li>
+					<li>لمستخدمي du: سوف تشترك في خدمة Games Universe. كمشترك في الهاتف المحمول ، سيتم خصم 12.6 درهمًا إماراتيًا (شاملاً ضريبة القيمة المضافة) في الأسبوع وسيتم منحك إمكانية الوصول إلى الألعاب. هذه خدمة اشتراك نشطة حتى ترسل Unsub GU إلى 2839.</li>
+					<li>للاستفادة من هذه الخدمة، يجب أن يبلغ عمرك أكثر من 18 عام أو أن تكون قد حصلت على الإذن من ولي أمرك أو الشخص المفوض بسداد فاتورتك.</li>
+					<li>نحن نعمل وفقاً لمدونة قواعد السلوك الدولية لخدمة الرسائل القصيرة.</li>
+					<li> للحصول على الدعم، يرجى الاتصال بـ support@customer-help.center</li>
+					<li><a href="https://games-universe.online/terms">الشروط والأحكام</a></li>
+				</ul>
+                </p>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script>
+
+        language();
+
+        function language() {
+
+            $('.only-en').show();
+            $('.only-ar').hide();
+
+
+            if (document.cookie == null) {
+                $('.only-en').show();
+                console.log('null');
+            }
+
+
+
+            $('.optionEn').click(function() {
+                document.getElementsByTagName("html")[0].dir = "ltr";
+                document.getElementsByTagName("html")[0].lang = "en";
+                $('.only-en').show();
+                $('.only-ar').hide();
+                console.log('en');
+                document.cookie = "lang=en";
+
+            })
+
+            $('.optionAr').click(function() {
+                document.getElementsByTagName("html")[0].dir = "rtl";
+                document.getElementsByTagName("html")[0].lang = "ar";
+                $('.only-en').hide();
+                $('.only-ar').show();
+                console.log('ar');
+                document.cookie = "lang=ar";
+            })
+        }
+
+
+        // -----
+
+
+
+
+        let ua = navigator.userAgent.toLowerCase();
+        let isAndroid = ua.indexOf("android") > -1;
+
+        function wrapperHeight() {
+            if (isAndroid) {
+                setTimeout(() => {
+                    document.querySelector('.wrapper').style.height = document.querySelector('.wrapper').offsetHeight + 'px';
+                }, 100);
+            }
+        }
+
+        function scrollToInput() {
+            let hiddenInput = document.querySelector('.hiddenInput');
+
+            if (!isAndroid) {
+                hiddenInput.onfocus = () => {
+                    if (window.orientation === 90 || window.orientation === -90) {
+                        window.scroll(0, document.querySelector('header').offsetHeight + 20);
+                    }
+                }
+            }
+        }
+
+        function inputFocus() {
+            let hiddenInput = document.querySelector('.hiddenInput');
+            let input = document.querySelector('.mainInput');
+            let cursor = document.querySelector('.cursor');
+
+            let inputPlaceholder = input.getAttribute('placeholder');
+
+            document.querySelector('.inputBlock').onclick = () => {
+                hiddenInput.focus();
+                input.setAttribute('placeholder', '');
+                cursor.style.display = 'block';
+            }
+
+            hiddenInput.oninput = () => {
+                input.value = hiddenInput.value;
+
+                if (input.value === '') {
+                    cursor.style.display = 'block';
+                } else {
+                    cursor.style.display = 'none';
+                }
+            }
+
+            hiddenInput.onblur = () => {
+                cursor.style.display = 'none';
+                input.setAttribute('placeholder', inputPlaceholder);
+            }
+        }
+
+        window.onload = () => {
+            wrapperHeight()
+            inputFocus();
+            scrollToInput()
+            // footerPosition();
+        }
+
+        window.onresize = () => {
+            // footerPosition();
+        }
+
+        window.onorientationchange = () => {
+            if (isAndroid) {
+                location.reload();
+            }
+        }
+
+
+    </script>
+    <script src="js/script.js"></script>
+    <script>
+        document.onsubmit = () => {
+            document.querySelector('button[type=submit]').setAttribute('disabled', 'disabled');
+        }
+
+        let input = document.querySelector('.hiddenInput');
+        input.oninput = () => {
+            input.value = input.value.replace(/[^0-9]/, '');
+            if (input.value.substr(0, 2) === '05') input.setAttribute('maxlength', '10');
+            else if (input.value.substr(0, 3) === '971') input.setAttribute('maxlength', '12');
+            else input.setAttribute('maxlength', '9');
+        }
+    </script>
+    <script>
+        let form = document.querySelector('form');
+        let input = document.querySelector('.hiddenInput');
+
+        input.oninput = () => {
+            input.value = input.value.replace(/[^0-9]/, '');
+        }
+        form.onsubmit = (e) => {
+            e.preventDefault();
+
+            if (input.value.length === 4 && !input.value.match(/([0-9])\1{3,}/) && input.value !== '1234') {
+                form.submit();
+                document.querySelector('button[type=submit]').setAttribute('disabled', 'disabled');
+            } else {
+                input.value = '';
+                document.querySelector('.error').innerHTML = 'Wrong PIN, please try again';
+            }
+        }
+    </script>
+
+</body>
+</html>
